@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Weather Web App</title>
+
+</head>
+
+<body>
+
+
+
+    <div class="card-head">
+        <video autoplay muted loop playsinline class="bg-video" id="bgVideo">
+            <source src="./video/clear.mp4" type="video/mp4" >
+        </video>
+        <div class="overlay">
+            <div class="card">
+                <div class="form">
+
+                    <form action="" id="weatherForm">
+
+
+                        <input type="text" placeholder="Enter Country Name" id="txtValue">
+                        <button class="fa-solid fa-magnifying-glass " type="submit" id="btn"></button>
+                    </form>
+                </div>
+                <div id="errorShow">
+                    <!-- <div class="error">
+                        <h1 id="error"></h1>
+                    </div> -->
+                </div>
+
+
+
+
+                <div class="weather-details">
+                    <img src="./icons/smile.png" alt="Weather-icon" id="weatherIcon">
+                </div>
+
+                <div class="weather-text">
+                    <h1 id="weather">0<sup>°C</sup></h1>
+                    <h3 id="description">---</h3>
+                </div>
+
+                <div class="icons">
+                    <div class="humidity">
+                        <img src="./icons/humidity.png" alt="">
+                        <div class="text-hu">
+                            <h2 class="humidityTxt" id="humidityTxt">--</h2>
+                            <h3>Humidity</h3>
+                        </div>
+
+
+                    </div>
+                    <div class="wind">
+                        <img src="./icons/wind speed.png" alt="">
+                        <div class="text-hu">
+                            <h2 id="windTxt">--</h2>
+                            <h3>Wind Speed</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
