@@ -199,3 +199,17 @@ h1 {
     font-size: 15px;
     font-weight: 100;
 }
+
+@media (max-width: 767px) {
+  
+    .card {
+    
+    width: 260px;
+}
+
+#weatherForm input {
+    width: 260px;
+    
+}
+
+}
